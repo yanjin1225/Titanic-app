@@ -5,14 +5,13 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # 显示标题
-st.title('Titanic App by JIN YAN')
 st.markdown('<h1 style="font-size:24px; font-weight:bold;">Titanic App by JIN YAN</h1>', unsafe_allow_html=True)
 
 # 读取Titanic数据集
 df = pd.read_csv('train.csv')
 
 # 显示数据集
-st.write("Titanic DataFrame", df)
+st.write(df)
 
 # 创建三个子图的图形
 fig, axes = plt.subplots(1, 3, figsize=(15, 5))
